@@ -1,0 +1,232 @@
+{
+    "uid": "4d7727f2-28ea-4650-b2f7-2f9d1dc59a46",
+    "name": "5_Default_NeuralNetwork",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        112.42361708300781,
+                        133.54438466244633,
+                        7.803475713281579,
+                        111.41997757853989,
+                        133.35416412916692,
+                        7.679289019259224,
+                        7.913099206692986,
+                        7.783835580355273,
+                        7.675167736935256,
+                        7.909749043390713,
+                        7.783040739547968
+                    ],
+                    "mean": [
+                        53.51811918063315,
+                        1212.9208566108007,
+                        28.341653631284913,
+                        52.9857355679702,
+                        1212.5903165735567,
+                        27.82275698324022,
+                        28.781155493482313,
+                        28.2953951848896,
+                        27.716798882681566,
+                        28.67029236499069,
+                        28.188735567970205
+                    ],
+                    "var": [
+                        12639.069678026764,
+                        17834.102674871432,
+                        60.89423320777546,
+                        12414.41140360233,
+                        17783.333090588792,
+                        58.97147984131529,
+                        62.617139054965165,
+                        60.588096342004704,
+                        58.90819979009186,
+                        62.564129929420304,
+                        60.575723153463386
+                    ],
+                    "n_samples_seen": 1074,
+                    "n_features_in": 11,
+                    "columns": [
+                        "PE Ratio[t]",
+                        "Revenue_Amount(Millions)[t]",
+                        "close[t-1]",
+                        "PE Ratio[t-1]",
+                        "Revenue_Amount(Millions)[t-1]",
+                        "close[t-1]_7_min",
+                        "close[t-1]_7_max",
+                        "close[t-1]_7_mean",
+                        "close[t-1]_14_min",
+                        "close[t-1]_14_max",
+                        "close[t-1]_14_mean"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.7623662634602854
+                ],
+                "mean": [
+                    2.341077740779949
+                ],
+                "var": [
+                    0.5812023196623972
+                ],
+                "n_samples_seen": 1074,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    16.236
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "PE Ratio[t]": [
+                        "scale_normal"
+                    ],
+                    "Revenue_Amount(Millions)[t]": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]": [
+                        "scale_normal"
+                    ],
+                    "PE Ratio[t-1]": [
+                        "scale_normal"
+                    ],
+                    "Revenue_Amount(Millions)[t-1]": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_min": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_max": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_mean": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_min": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_max": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_mean": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Neural Network",
+            "algorithm_short_name": "Neural Network",
+            "uid": "3bfad32f-7769-4ea5-9a0b-82d358d0d137",
+            "params": {
+                "model_type": "Neural Network",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "dense_1_size": 32,
+                "dense_2_size": 16,
+                "learning_rate": 0.05,
+                "seed": 5,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "PE Ratio[t]": [
+                    "scale_normal"
+                ],
+                "Revenue_Amount(Millions)[t]": [
+                    "scale_normal"
+                ],
+                "close[t-1]": [
+                    "scale_normal"
+                ],
+                "PE Ratio[t-1]": [
+                    "scale_normal"
+                ],
+                "Revenue_Amount(Millions)[t-1]": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_min": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_max": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_mean": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_min": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_max": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_mean": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "data/generated/automl/saved/abm/X.data",
+            "y_path": "data/generated/automl/saved/abm/y.data",
+            "results_path": "data/generated/automl/saved/abm"
+        },
+        "learner": {
+            "model_type": "Neural Network",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "dense_1_size": 32,
+            "dense_2_size": 16,
+            "learning_rate": 0.05,
+            "seed": 5,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "5_Default_NeuralNetwork",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "5_Default_NeuralNetwork/learner_fold_0.neural_network"
+    ],
+    "predictions_fname": "5_Default_NeuralNetwork/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 0.5337032161163026,
+    "train_time": 0.3749268054962158,
+    "is_stacked": false
+}

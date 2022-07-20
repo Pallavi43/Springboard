@@ -1,0 +1,247 @@
+{
+    "uid": "1bed20c4-1261-489a-abc7-66c105cf099e",
+    "name": "3_Linear",
+    "preprocessing": [
+        {
+            "scale": [
+                {
+                    "scale": [
+                        4.465606936711942,
+                        510.0075331199618,
+                        35.95732486862459,
+                        4.468414492868966,
+                        508.8708163180549,
+                        35.305692394797866,
+                        36.69732212911648,
+                        35.97617337752775,
+                        1.8257379873495265,
+                        35.39774610840275,
+                        36.7650265499984,
+                        36.021285493916515,
+                        1.813017782006229
+                    ],
+                    "mean": [
+                        20.12648975791434,
+                        2151.2104283054005,
+                        124.33560707635007,
+                        20.122188081936685,
+                        2149.640595903166,
+                        121.69467039106144,
+                        127.02194134078212,
+                        124.40010960361798,
+                        2.009974080411339,
+                        121.6228119180633,
+                        126.87725977653633,
+                        124.26591061452513,
+                        1.9760779457201623
+                    ],
+                    "var": [
+                        19.94164531320981,
+                        260107.6838391089,
+                        1292.9292117078082,
+                        19.96672808008142,
+                        258949.50770020357,
+                        1246.4919154760878,
+                        1346.693451448142,
+                        1294.2850508899367,
+                        3.3333191984510995,
+                        1253.0004295549418,
+                        1351.6671772220877,
+                        1297.5330086342406,
+                        3.287033477870786
+                    ],
+                    "n_samples_seen": 1074,
+                    "n_features_in": 13,
+                    "columns": [
+                        "PE Ratio[t]",
+                        "Revenue_Amount(Millions)[t]",
+                        "close[t-1]",
+                        "PE Ratio[t-1]",
+                        "Revenue_Amount(Millions)[t-1]",
+                        "close[t-1]_7_min",
+                        "close[t-1]_7_max",
+                        "close[t-1]_7_mean",
+                        "close[t-1]_7_std",
+                        "close[t-1]_14_min",
+                        "close[t-1]_14_max",
+                        "close[t-1]_14_mean",
+                        "close[t-1]_14_std"
+                    ],
+                    "scale_method": "scale_normal"
+                }
+            ],
+            "scale_y": {
+                "scale": [
+                    0.9713872612102028
+                ],
+                "mean": [
+                    3.7752853542465066
+                ],
+                "var": [
+                    0.9435932112414587
+                ],
+                "n_samples_seen": 1074,
+                "n_features_in": 1,
+                "columns": [
+                    "target"
+                ],
+                "scale_method": "scale_log_and_normal",
+                "X_min_values": [
+                    65.002
+                ]
+            },
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "PE Ratio[t]": [
+                        "scale_normal"
+                    ],
+                    "Revenue_Amount(Millions)[t]": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]": [
+                        "scale_normal"
+                    ],
+                    "PE Ratio[t-1]": [
+                        "scale_normal"
+                    ],
+                    "Revenue_Amount(Millions)[t-1]": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_min": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_max": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_mean": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_7_std": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_min": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_max": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_mean": [
+                        "scale_normal"
+                    ],
+                    "close[t-1]_14_std": [
+                        "scale_normal"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude",
+                    "scale_log_and_normal"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Linear Regression",
+            "algorithm_short_name": "Linear",
+            "uid": "b63a8de5-2283-4d4b-8d63-7d20b9b4c9ca",
+            "params": {
+                "model_type": "Linear",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "PE Ratio[t]": [
+                    "scale_normal"
+                ],
+                "Revenue_Amount(Millions)[t]": [
+                    "scale_normal"
+                ],
+                "close[t-1]": [
+                    "scale_normal"
+                ],
+                "PE Ratio[t-1]": [
+                    "scale_normal"
+                ],
+                "Revenue_Amount(Millions)[t-1]": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_min": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_max": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_mean": [
+                    "scale_normal"
+                ],
+                "close[t-1]_7_std": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_min": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_max": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_mean": [
+                    "scale_normal"
+                ],
+                "close[t-1]_14_std": [
+                    "scale_normal"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude",
+                "scale_log_and_normal"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "data/generated/automl/saved/aap/X.data",
+            "y_path": "data/generated/automl/saved/aap/y.data",
+            "results_path": "data/generated/automl/saved/aap"
+        },
+        "learner": {
+            "model_type": "Linear",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "3_Linear",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "3_Linear/learner_fold_0.linear"
+    ],
+    "predictions_fname": "3_Linear/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 15.399430027394624,
+    "train_time": 0.9317550659179688,
+    "is_stacked": false
+}

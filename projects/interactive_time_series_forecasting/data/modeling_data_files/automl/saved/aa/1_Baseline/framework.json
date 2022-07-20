@@ -1,0 +1,110 @@
+{
+    "uid": "23a0f2ff-17a6-4b03-a072-9eacec7b80e0",
+    "name": "1_Baseline",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "PE Ratio[t]",
+                "Revenue_Amount(Millions)[t]",
+                "PE Ratio[t-1]",
+                "Revenue_Amount(Millions)[t-1]"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "PE Ratio[t]": [
+                        "remove_column"
+                    ],
+                    "Revenue_Amount(Millions)[t]": [
+                        "remove_column"
+                    ],
+                    "PE Ratio[t-1]": [
+                        "remove_column"
+                    ],
+                    "Revenue_Amount(Millions)[t-1]": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Baseline Regressor",
+            "algorithm_short_name": "Baseline",
+            "uid": "e165a4f0-3384-4b08-a50a-4bc8a369e702",
+            "params": {
+                "model_type": "Baseline",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "PE Ratio[t]": [
+                    "remove_column"
+                ],
+                "Revenue_Amount(Millions)[t]": [
+                    "remove_column"
+                ],
+                "PE Ratio[t-1]": [
+                    "remove_column"
+                ],
+                "Revenue_Amount(Millions)[t-1]": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "data/generated/automl/saved/aa/X.data",
+            "y_path": "data/generated/automl/saved/aa/y.data",
+            "results_path": "data/generated/automl/saved/aa"
+        },
+        "learner": {
+            "model_type": "Baseline",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "1_Baseline",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "1_Baseline/learner_fold_0.baseline"
+    ],
+    "predictions_fname": "1_Baseline/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 7.371466314753519,
+    "train_time": 1.1455790996551514,
+    "is_stacked": false
+}

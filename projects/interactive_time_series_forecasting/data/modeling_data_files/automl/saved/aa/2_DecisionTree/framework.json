@@ -1,0 +1,116 @@
+{
+    "uid": "5aea984b-d1ac-4cb2-a86c-bff7b2323f18",
+    "name": "2_DecisionTree",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "PE Ratio[t]",
+                "Revenue_Amount(Millions)[t]",
+                "PE Ratio[t-1]",
+                "Revenue_Amount(Millions)[t-1]"
+            ],
+            "ml_task": "regression",
+            "params": {
+                "columns_preprocessing": {
+                    "PE Ratio[t]": [
+                        "remove_column"
+                    ],
+                    "Revenue_Amount(Millions)[t]": [
+                        "remove_column"
+                    ],
+                    "PE Ratio[t-1]": [
+                        "remove_column"
+                    ],
+                    "Revenue_Amount(Millions)[t-1]": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "regression"
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "1.1.1",
+            "algorithm_name": "Decision Tree",
+            "algorithm_short_name": "Decision Tree",
+            "uid": "35be12a8-7ae0-44ba-a6f8-fe1dd51ae580",
+            "params": {
+                "model_type": "Decision Tree",
+                "ml_task": "regression",
+                "n_jobs": -1,
+                "seed": 1235,
+                "criterion": "mse",
+                "max_depth": 3,
+                "explain_level": 0
+            },
+            "name": "learner_fold_0"
+        }
+    ],
+    "params": {
+        "additional": {
+            "trees_in_step": 1,
+            "train_cant_improve_limit": 0,
+            "max_steps": 1,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "PE Ratio[t]": [
+                    "remove_column"
+                ],
+                "Revenue_Amount(Millions)[t]": [
+                    "remove_column"
+                ],
+                "PE Ratio[t-1]": [
+                    "remove_column"
+                ],
+                "Revenue_Amount(Millions)[t-1]": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "regression"
+        },
+        "validation_strategy": {
+            "validation_type": "split",
+            "train_ratio": 0.75,
+            "shuffle": true,
+            "X_path": "data/generated/automl/saved/aa/X.data",
+            "y_path": "data/generated/automl/saved/aa/y.data",
+            "results_path": "data/generated/automl/saved/aa"
+        },
+        "learner": {
+            "model_type": "Decision Tree",
+            "ml_task": "regression",
+            "n_jobs": -1,
+            "seed": 1235,
+            "criterion": "mse",
+            "max_depth": 3,
+            "explain_level": 0
+        },
+        "automl_random_state": 1234,
+        "ml_task": "regression",
+        "explain_level": 0,
+        "name": "2_DecisionTree",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original",
+        "max_time_for_learner": 360.0
+    },
+    "saved": [
+        "2_DecisionTree/learner_fold_0.decision_tree"
+    ],
+    "predictions_fname": "2_DecisionTree/predictions_validation.csv",
+    "metric_name": "rmse",
+    "final_loss": 1.072642587540713,
+    "train_time": 0.8444302082061768,
+    "is_stacked": false
+}

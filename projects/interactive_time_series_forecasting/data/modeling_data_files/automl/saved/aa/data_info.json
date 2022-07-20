@@ -1,0 +1,70 @@
+{
+    "columns": [
+        "PE Ratio[t]",
+        "Revenue_Amount(Millions)[t]",
+        "Interest Rate(%)[t]",
+        "close[t-1]",
+        "PE Ratio[t-1]",
+        "Revenue_Amount(Millions)[t-1]",
+        "Interest Rate(%)[t-1]",
+        "close[t-1]_7_min",
+        "close[t-1]_7_max",
+        "close[t-1]_7_mean",
+        "close[t-1]_7_std",
+        "close[t-1]_14_min",
+        "close[t-1]_14_max",
+        "close[t-1]_14_mean",
+        "close[t-1]_14_std"
+    ],
+    "rows": 1432,
+    "cols": 15,
+    "target_is_numeric": true,
+    "columns_info": {
+        "PE Ratio[t]": [
+            "constant_column"
+        ],
+        "Revenue_Amount(Millions)[t]": [
+            "constant_column"
+        ],
+        "Interest Rate(%)[t]": [],
+        "close[t-1]": [
+            "scale"
+        ],
+        "PE Ratio[t-1]": [
+            "constant_column"
+        ],
+        "Revenue_Amount(Millions)[t-1]": [
+            "constant_column"
+        ],
+        "Interest Rate(%)[t-1]": [],
+        "close[t-1]_7_min": [
+            "scale"
+        ],
+        "close[t-1]_7_max": [
+            "scale"
+        ],
+        "close[t-1]_7_mean": [
+            "scale"
+        ],
+        "close[t-1]_7_std": [
+            "scale"
+        ],
+        "close[t-1]_14_min": [
+            "scale"
+        ],
+        "close[t-1]_14_max": [
+            "scale"
+        ],
+        "close[t-1]_14_mean": [
+            "scale"
+        ],
+        "close[t-1]_14_std": [
+            "scale"
+        ]
+    },
+    "target_info": [
+        "scale"
+    ],
+    "n_features": 15,
+    "is_sample_weighted": false
+}
