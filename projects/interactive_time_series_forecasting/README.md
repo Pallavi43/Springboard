@@ -1,6 +1,11 @@
 # Introduction
 This project contains scripts that process 15 years of Stock Market data (obtained from a Kaggle dataset) and performs Data Wrangling and Predictive Modeling. The provided scripts use Dask for performing parallel computations on stock datasets.
 
+# Data Preparation workflow
+Upload all the data artifacts within ./data/ to a Bucket on Amazon S3 Object store. Then spin off a 3-node Amazon EMR cluster with Hadoop Yarn setup. Then set up a Dask-Yarn cluster setup on the master node of the EMR cluster using the provided bootstrap action by Dask. Next, execute the provided scripts that read all the stock data files from AWS S3; performed wrangling, exploring and modeling in the EMR cluster and write back to the Amazon S3 filesystem. 
+
+![data-preparation-workflow](assets/data-preparation-workflow.png)
+
 # Deployment
 ## Running on Local machine
 For running on local machine, setup a virtual environment and then install the recommended packages
