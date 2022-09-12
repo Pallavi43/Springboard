@@ -1,11 +1,11 @@
 # Springboard Data Science Career Track
-Springboard Data Science track project work
+During the curriculum at Springboard, I completed two guided capstone projects that were reviewed by an independent industry expert with focus on Machine Learning, Data Visualization, Data Wrangling, Python, and SQL.
 
 # Capstone Pojects completed
 
 #### [Cloud Computing and AutoML applied to Time Series Forecasting](projects/interactive_time_series_forecasting)
 
-**Development Environment:** Python and Pandas, Dask Yarn Cluster (Amazon EMR), Plotly Dash, and CSV/Parquet files (on Amazon S3).
+**Development Environment:** _Python and Pandas, Dask Yarn Cluster (Amazon EMR), Plotly Dash, and CSV/Parquet files (on Amazon S3)._
 
 - Transformed existing end-to-end stock time series forecasting notebooks for distributed processing on a 3-node Dask Yarn Cluster running over Amazon EMR and processing data from Amazon S3.
 - Generated Supervised learning datasets by doing feature engineering over stock datasets to run AutoML framework.
@@ -13,7 +13,7 @@ Springboard Data Science track project work
 
 #### [Time Series Forecasting of Stock Market Data](projects/stock_price_timeseries)
 
-**Development Environment:** Anaconda, Python, Pandas, NumPy, MatplotLib, Seaborn, and other Python libraries
+**Development Environment:** _Anaconda, Python, Pandas, NumPy, MatplotLib, Seaborn, and other Python libraries_
 
 - Scraped 15+ year comprehensive stock market datasets from sources like Kaggle, macrotrends.net, and partitioned them into six sectors based on industry type.
 - Performed data wrangling to impute missing days based on NYSE calendar and removed other inconsistencies; and conducted extensive Exploratory Data Analysis.
