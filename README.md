@@ -1,7 +1,7 @@
 # Springboard Data Science Career Track
 During the curriculum at Springboard, I completed two guided capstone projects that were reviewed by an independent industry expert with focus on Machine Learning, Data Visualization, Data Wrangling, Python, and SQL.
 
-# Capstone Pojects completed
+# Capstone Projects completed
 
 #### [Cloud Computing and AutoML applied to Time Series Forecasting](projects/interactive_time_series_forecasting)
 
